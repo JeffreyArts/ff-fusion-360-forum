@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Removes annoying black header bar and redirects autodesk to forum homepage",
+
+  "icons": {
+    "48": "48.png",
+    "96": "96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://forums.autodesk.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
+
